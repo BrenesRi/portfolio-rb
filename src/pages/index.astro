@@ -1,0 +1,68 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Badge from "../components/Badge.astro";
+import LinkedInLogo from "../icons/LinkedIn.astro";
+import GitHubLogo from "../icons/GitHub.astro";
+import MailLogo from "../icons/Mail.astro";
+import SocialCards from "../components/SocialCards.astro";
+---
+
+<Layout 
+title="Ricardo Brenes's Portfolio - Systems Engineering - Developer - Programmer"
+description="Welcome to the web portfolio of Ricardo Brenes, a final-year Systems Engineering student at Universidad Nacional de Costa Rica (UNA). Passionate about technology and dedicated to continuous learning">
+	<main>
+		<section class="w-full mx-auto lg:w-[740px] py-44">
+			<h1
+				class="text-white text-5xl font-bold flex justify-center flex-row
+			gap-x-4 pb-10"
+			>
+				🇨🇷 Hi! I'm Ricardo Brenes <a
+					href="https://www.linkedin.com/in/ricardobrenes/"
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center"
+				>
+					<Badge> Open to Work </Badge>
+				</a>
+			</h1>
+			<h2 class="text-2xl text-wrap pb-10">
+				<span class="font-bold text-blue-200"
+					>Systems Engineer Student and Technology Enthusiast 💻</span
+				>
+				<br />
+				<span class=""
+					>I enjoy collaborative environments and I believe clear
+					communication is essential for success.</span
+				>
+				<br />
+				<span class="font-bold text-blue-100"
+					>Always willing to learn new things 📖</span
+				>
+			</h2>
+
+			<nav class="flex gap-x-4">
+				<SocialCards href="https://www.linkedin.com/in/ricardobrenes/">
+					<LinkedInLogo class="w-6 h-6" />
+					LinkedIn
+				</SocialCards>
+				<SocialCards href="https://github.com/BrenesRi/">
+					<GitHubLogo class="w-6 h-6" />
+					GitHub
+				</SocialCards>
+				<SocialCards href="mailto:ribrenes10@gmail.com">
+					<MailLogo class="w-6 h-6" />
+					ribrenes10@gmail.com
+				</SocialCards>
+				<SocialCards href="https://www.instagram.com/richybrenes2/">
+					<GitHubLogo class="w-6 h-6" />
+					Instagram
+				</SocialCards>
+				<SocialCards href="https://www.instagram.com/richybrenes2/">
+					<GitHubLogo class="w-6 h-6" />
+					8522-4487
+				</SocialCards>
+			</nav>
+		</section>
+	</main>
+</Layout>
