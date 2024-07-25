@@ -11,17 +11,18 @@ import BriefcaseLogo from "../icons/Briefcase.astro";
 import PromptLogo from "../icons/Prompt.astro";
 import SocialCards from "../components/SocialCards.astro";
 import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
 	title="Ricardo Brenes's Portfolio - Systems Engineering & Developer"
 	description="Welcome to the web portfolio of Ricardo Brenes, a final-year Systems Engineering student at Universidad Nacional de Costa Rica (UNA). Passionate about technology and dedicated to continuous learning"
 >
-	<main>
+	<main class="px-4">
 		<section class="w-full mx-auto lg:w-[740px] py-28 pb-16">
 			<h1
-				class="text-white text-5xl font-bold flex justify-center flex-row
-			gap-x-4 pb-10"
+				class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex justify-center flex-row
+			gap-x-4 pb-6 lg:pb-10"
 			>
 				🇨🇷 Hi! I'm Ricardo Brenes <a
 					href="https://www.linkedin.com/in/ricardobrenes/"
@@ -32,7 +33,7 @@ import Experience from "../components/Experience.astro";
 					<Badge> Open to Work </Badge>
 				</a>
 			</h1>
-			<h2 class="text-2xl text-wrap pb-10">
+			<h2 class=" text-xl lg:text-2xl text-wrap pb-10 max-x-96">
 				<span class="font-bold text-blue-100"
 					>Systems Engineer Student & Technology Enthusiast 💻</span
 				>
@@ -47,25 +48,25 @@ import Experience from "../components/Experience.astro";
 				>
 			</h2>
 
-			<nav class="flex gap-x-4">
+			<nav class="flex gap-x-2 flex-wrap">
 				<SocialCards href="https://www.linkedin.com/in/ricardobrenes/">
-					<LinkedInLogo class="w-6 h-6" />
+					<LinkedInLogo class="size-4 md:size-5" />
 					LinkedIn
 				</SocialCards>
 				<SocialCards href="https://github.com/BrenesRi/">
-					<GitHubLogo class="w-6 h-6" />
+					<GitHubLogo class="size-4 md:size-5" />
 					GitHub
 				</SocialCards>
 				<SocialCards href="mailto:ribrenes10@gmail.com">
-					<MailLogo class="w-6 h-6" />
+					<MailLogo class="size-4 md:size-5" />
 					ribrenes10@gmail.com
 				</SocialCards>
-				<SocialCards href="https://www.instagram.com/richybrenes2/">
+				{/*<SocialCards href="https://www.instagram.com/richybrenes2/">
 					<InstagramLogo class="w-6 h-6" />
 					Instagram
-				</SocialCards>
+				</SocialCards>*/}
 				<SocialCards href="tel:8522-4487">
-					<PhoneLogo class="w-6 h-6" />
+					<PhoneLogo class="size-4 md:size-5" />
 					8522-4487
 				</SocialCards>
 			</nav>
@@ -75,7 +76,8 @@ import Experience from "../components/Experience.astro";
 			<h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center" >
 				<PromptLogo class="size-8 w"/>
 				Proyect Experience</h2>
-			<Experience />
+			{/*}<Experience />*/}
+			<Projects />
 		</section>
 	</main>
 </Layout>

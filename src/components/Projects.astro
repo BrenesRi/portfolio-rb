@@ -1,0 +1,45 @@
+---
+const PROJECTS   = [
+    {
+        date: "Year: 2024",
+        title: "PetFinder: Mobile Application in the Cloud ",
+        description: "We developed an Android App from Figma Design to Cloud Deployment. BackEnd was written in Java and deployed in "+
+        "Heroku Cloud while FrontEnd was Deployed in FireBase for destribution. This app integrates an OpenAI API utility.",
+        github: "https://github.com/una-eif411-41263-202410-G5/project-frontend-tango",
+        image: "/petfinder.png",
+        tags: ['Kotlin','Java','Cloud']
+    },
+    {
+        date: "Year: From 2023 to 2024",
+        title: "SMC Inventory Control System",
+        description: "Using Javascript with Next.js as a Framework, Microsoft SQL as a database, Azure for DevOps and Github for"+
+        " version control, we developed a resposive inventory manager currently in use for SMC Ltd.",
+        github: "https://github.com/Nivek-12/ControlinventarioSMC-UNA",
+        image: "/smc.png",
+        tags: ['JavaScript','React','Next.js','SCRUM Methodology']
+    },
+    {
+        date: "Year: 2023",
+        title: "Web User Managment System",
+        description: "Using Laravel as the PHP Web Framework, along with Apache Web Server and Bootstrap as FrontEnd toolkit",
+        github: "https://github.com/BrenesRi/ProyectoAdmin",
+        image: "/bases.PNG",
+        tags: ['PHP','Laravel','MySQL']
+    },
+];
+---
+{
+PROJECTS.map(project => (
+    <article>
+<h3>{project.title}</h3>
+<p>{project.description}</p>
+<ul>
+    {project.tags.map(tag => (
+        <li>{tag}</li>
+    ))}
+</ul>
+<img src={project.image} alt="Imagen del Proyecto" />
+    </article>
+))
+}
+
