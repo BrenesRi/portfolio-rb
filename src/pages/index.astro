@@ -7,14 +7,18 @@ import GitHubLogo from "../icons/GitHub.astro";
 import MailLogo from "../icons/Mail.astro";
 import InstagramLogo from "../icons/Instagram.astro";
 import PhoneLogo from "../icons/Phone.astro";
+import BriefcaseLogo from "../icons/Briefcase.astro";
+import PromptLogo from "../icons/Prompt.astro";
 import SocialCards from "../components/SocialCards.astro";
+import Experience from "../components/Experience.astro";
 ---
 
-<Layout 
-title="Ricardo Brenes's Portfolio - Systems Engineering - Developer - Programmer"
-description="Welcome to the web portfolio of Ricardo Brenes, a final-year Systems Engineering student at Universidad Nacional de Costa Rica (UNA). Passionate about technology and dedicated to continuous learning">
+<Layout
+	title="Ricardo Brenes's Portfolio - Systems Engineering & Developer"
+	description="Welcome to the web portfolio of Ricardo Brenes, a final-year Systems Engineering student at Universidad Nacional de Costa Rica (UNA). Passionate about technology and dedicated to continuous learning"
+>
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-28">
+		<section class="w-full mx-auto lg:w-[740px] py-28 pb-16">
 			<h1
 				class="text-white text-5xl font-bold flex justify-center flex-row
 			gap-x-4 pb-10"
@@ -30,7 +34,7 @@ description="Welcome to the web portfolio of Ricardo Brenes, a final-year System
 			</h1>
 			<h2 class="text-2xl text-wrap pb-10">
 				<span class="font-bold text-blue-100"
-					>Systems Engineer Student and Technology Enthusiast 💻</span
+					>Systems Engineer Student & Technology Enthusiast 💻</span
 				>
 				<br />
 				<span class=""
@@ -38,7 +42,7 @@ description="Welcome to the web portfolio of Ricardo Brenes, a final-year System
 					communication is essential for success.</span
 				>
 				<br />
-				<span class="font-bold text-blue-100"
+				<span class="font-semibold text-blue-100"
 					>Always willing to learn new things 📖</span
 				>
 			</h2>
@@ -65,6 +69,13 @@ description="Welcome to the web portfolio of Ricardo Brenes, a final-year System
 					8522-4487
 				</SocialCards>
 			</nav>
+		</section>
+
+		<section id="projects" class="w-full mx-auto lg:w-[740px] py-20 pb-16">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center" >
+				<PromptLogo class="size-8 w"/>
+				Proyect Experience</h2>
+			<Experience />
 		</section>
 	</main>
 </Layout>

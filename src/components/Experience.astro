@@ -1,0 +1,42 @@
+---
+import type { ACTION_ERROR_CODES, ActionError } from "astro:actions";
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+    {
+        date: "Year: 2024",
+        title: "PetFinder: Mobile Application in the Cloud ",
+        description: "We developed an Android App from Figma Design to Cloud Deployment. BackEnd was written in Java and deployed in "+
+        "Heroku Cloud while FrontEnd was Deployed in FireBase for destribution. This app integrates an OpenAI API utility."
+    },
+    {
+        date: "Year: From 2023 to 2024",
+        title: "SMC Inventory Control System",
+        description: "Using Javascript with Next.js as a Framework, Microsoft SQL as a database, Azure for DevOps and Github for"+
+        " version control, we developed a resposive inventory manager currently in use for SMC Ltd."
+    },
+    {
+        date: "Year: 2023",
+        title: "Web User Managment System",
+        description: "Using Laravel as the PHP Web Framework, along with Apache Web Server and Bootstrap as FrontEnd toolkit"
+    },
+    {
+        date: "Year: 2021",
+        title: "Java Desktop Applications",
+        description: "Using Threads, MySQL and PostgreSQL as Databases and Swift Library for the GUI"
+    }
+];
+
+---
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700 ml-3">
+    {
+        EXPERIENCE.map(experience => (
+        <li class="mb-10 ms-4">
+            <ExperienceItem {...experience}/>
+            </li>
+        ))
+    }                  
+</ol>
+

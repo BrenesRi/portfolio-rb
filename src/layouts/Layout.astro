@@ -5,6 +5,7 @@ import "@fontsource-variable/onest";
 import '@fontsource/mclaren';
 import '@fontsource-variable/oxanium';
 import '@fontsource-variable/tilt-neon';
+import Footer from "../components/Footer.astro";
 
 interface Props {
 	title: string;
@@ -28,6 +29,7 @@ const { description, title } = Astro.props;
 		<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(200,200,200,0.3),rgba(255,255,255,0))]"></div>
 		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
@@ -36,11 +38,19 @@ const { description, title } = Astro.props;
 	}
 	html {
 		font-family: "Tilt Neon Variable", system-ui, sans-serif;
+		scroll-behavior: smooth;
 	}
 	body {
-		background: #181818;
+		background: black;
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
+		min-height: 100vh;
 	}
+
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+	}
+	
 </style>
